@@ -1,0 +1,430 @@
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7; 
+}
+
+
+main {
+    padding-top: 80px; 
+}
+
+/* --- Barra de Navegação*/
+#mainNav {
+    background-color: #084b81 !important; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#mainNav .navbar-nav .nav-link {
+    color: #FFC300; 
+    font-weight: 600;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+#mainNav .navbar-nav .nav-link:hover {
+    color: white; 
+}
+
+#mainNav .navbar-toggler {
+    border-color: #FFC300; 
+}
+
+
+#mainNav .btn-warning {
+    background-color: #FFC300;
+    border-color: #FFC300;
+    color: #003366; 
+    font-weight: bold;
+}
+#mainNav .form-control {
+    border-radius: 50px;
+}
+
+
+/* --- Header --- */
+header {
+    height: 400px;
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    padding: 120px 20px 0 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Seções Principais (MAIN) --- */
+main section {
+    padding: 60px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+main section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #003366; 
+    text-align: center;
+}
+
+main section h3 {
+    color: #003366;
+}
+
+/* --- ESTILO PARA O CARROSSEL MVV */
+#m_v_v {
+    background-color: #f7f7f7;
+    position: relative; 
+}
+
+.carousel-inner {
+    min-height: 350px; 
+    padding: 20px 0;
+    overflow: hidden; 
+    position: relative; 
+}
+
+.carousel-item {
+    min-height: 300px; 
+    display: flex !important; 
+    align-items: center; 
+    justify-content: center;
+    
+    opacity: 0; 
+    transition: opacity 0.6s ease-in-out;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+}
+
+.carousel-item.active {
+    opacity: 1 !important; 
+    z-index: 1; 
+}
+
+.mvv-card {
+    max-width: 600px;
+    width: 100%; 
+    margin: 0 30px; 
+    text-align: center;
+    
+    background-color: white; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 30px;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mvv-card h2 {
+    color: #003366;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.mvv-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 300px; 
+}
+.mvv-card ul li {
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 25px;
+}
+.mvv-card ul li::before {
+    content: "★"; 
+    color: #FFC300;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#mvvCarousel .carousel-control-prev-icon,
+#mvvCarousel .carousel-control-next-icon {
+    filter: invert(1); 
+    background-size: 25px; 
+}
+
+ /* Comportamento do carrosel para dispositivos moveis */
+@media (min-width: 768px) {
+    #mvvCarousel .carousel-control-prev,
+    #mvvCarousel .carousel-control-next {
+        width: 5%; 
+    }
+}
+
+/* Secção de história da escola e linha do tempo*/
+#he {
+    margin-top: 50px;
+    background-color: #f7f7f7;
+    position: relative; 
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #003366; 
+    border: 3px solid #FFC300; 
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+.timeline-event h3 {
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline-event img {
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px; 
+}
+
+/*Comportamento da linha do tempo em dispositivos moveis*/
+@media (min-width: 768px) {
+    .timeline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 4px; 
+        background-color: #ddd; 
+        margin-left: -2px;
+        z-index: 5; 
+    }
+    
+    .timeline-event div:not(.timeline-dot) {
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        position: relative; 
+        z-index: 10;
+    }
+}
+
+/* Secção de professores */
+
+section.professores{
+    margin-top: 50px;
+}
+.professores {
+    background-color: #f7f7f7;
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 100px;
+    padding: 20px 0;
+}
+
+.professor-card {
+    width: 32%; 
+    max-width: 350px; 
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; 
+    transition: transform 0.3s ease;
+}
+
+.professor-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; 
+    overflow: hidden;
+}
+
+.card-image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    border-radius: 0; 
+}
+
+.card-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-info h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 51, 102, 0.8); 
+    color: white;
+    opacity: 0; 
+    transition: opacity 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.professor-card:hover .card-overlay {
+    opacity: 1; 
+}
+
+.overlay-text {
+    text-align: center;
+}
+
+.overlay-text p {
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+/* --- Responsividade: Celulares --- */
+@media (max-width: 767px) {
+    .professores {
+        justify-content: center; /* Centraliza a coluna em telas pequenas */
+    }
+    .professor-card {
+        width: 90%; 
+        max-width: none;
+        margin-bottom: 20px; /* Adiciona espaçamento entre os cards no celular */
+    }
+}
+
+/* Seccção de Projetos e Atividades*/
+
+
+#pa {
+    margin-top: 50px;
+    background-color: #f7f7f7;
+}
+
+.projetos-cards .card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 100%; 
+}
+
+.projetos-cards .card:hover {
+    cursor: pointer;
+    transform: translateY(-5px) !important; 
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3) !important; 
+}
+
+
+.projetos-cards .card-img-top {
+    cursor: pointer;
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.text-primary-color {
+    color: #003366 !important;
+    font-weight: bold;
+}
+
+/* --- Seção de Calendário --- */
+#ce {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.calendario {
+    text-align: center;
+}
+.calendario img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.calendario img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#ma{
+    background-color: #f7f7f7;
+}
+/* Formulário de pré-matrícula */
+.btn-primary {
+    background-color: #003366 !important;
+    border-color: #003366 !important;
+    font-weight: bold;
+}
+.btn-primary:hover {
+    background-color: #004d99 !important;
+    border-color: #004d99 !important;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 15px;
+}
+
+footer strong {
+    font-size: 1.1em;
+}
+
+footer a {
+    color: #FFC300;
+}
+
+footer a:hover {
+    color: white;
+}

@@ -12,10 +12,14 @@ Leia o enunciado completo no Canvas.
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Ítalo Eduardo Carneiro da Silva
+- Matricula: 898961
+- Proposta de projeto escolhida: (Organização e equipes) - Escolas
+- Breve descrição sobre seu projeto: Este projeto é uma Landing Page  moderna e responsiva, desenvolvida para simular o website institucional da Escola Estadual fictícia Florentino Arnaldo Coelho.
+
+O principal objetivo é demonstrar a aplicação prática de HTML, CSS e o framework Bootstrap para criar uma experiência de usuário (UX) clara e envolvente. A página destaca os pilares de uma instituição de ensino de excelência: Missão e Valores, Projetos de Destaque (como Iniciação Científica e Cultura) e um Fluxo de Pré-Matrícula direto.
+
+O design foi pensado para transmitir confiança, profissionalismo e dinamismo, utilizando uma paleta de cores azul e um layout limpo para facilitar a navegação e a comunicação com a comunidade escolar.
 
 ## Print da Home-Page
 
