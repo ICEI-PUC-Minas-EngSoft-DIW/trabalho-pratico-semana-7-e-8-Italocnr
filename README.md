@@ -19,18 +19,18 @@ Leia o enunciado completo no Canvas.
 
 ## Print da Home-Page
 
-![HOME PAGE](/public/img/home_page_pt1.png.png)
-![HOME PAGE](/public/img/home_page_pt2.png.png)
-![HOME PAGE](/public/img/home_page_pt3.png.png)
-![HOME PAGE](/public/img/home_page_pt4.png.png)
-![HOME PAGE](/public/img/home_page_pt5.png.png)
+![HOME PAGE](public/img/home_page_pt1.png)
+![HOME PAGE](public/img/home_page_pt2.png)
+![HOME PAGE](public/img/home_page_pt3.png)
+![HOME PAGE](public/img/home_page_pt4.png)
+![HOME PAGE](public/img/home_page_pt5.png)
 
 ## Print da página de detalhes do item
 
-![PAGINA DE DETALHES DOS PROJETOS DE DESTAQUE](/public/img/detalhes1.png.png)
-![PAGINA DE DETALHES DOS PROJETOS DE DESTAQUE](/public/img/detalhes2.png.png)
-![PAGINA DE DETALHES DOS PROJETOS DE DESTAQUE](/public/img/detalhes3.png.png.png)
-![PAGINA DE DETALHES DOS PROJETOS DE DESTAQUE](/public/img/detalhes4.png.png.png)
+![PAGINA DE DETALHES DOS PROJETOS DE DESTAQUE](public/img/detalhes1.png)
+![PAGINA DE DETALHES DOS PROJETOS DE DESTAQUE](public/img/detalhes2.png)
+![PAGINA DE DETALHES DOS PROJETOS DE DESTAQUE](public/img/detalhes3.png)
+![PAGINA DE DETALHES DOS PROJETOS DE DESTAQUE](public/img/detalhes4.png)
 
 ## Cole aqui abaixo a estrutura JSON utilizada no app.js
 
